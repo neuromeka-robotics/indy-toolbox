@@ -7,7 +7,6 @@ function ret = MoveJointWaypoints(waypoints)
     
   % Extended Content
   exbuff = [];
-  waypoints = waypoints * 180 / pi;
   for i = 1:num_points
       posBuff = typecast(waypoints(i,:), 'uint8');
       exbuff(end+1 : end+length(posBuff)) = posBuff;
