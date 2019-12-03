@@ -16,7 +16,7 @@ function ret = GetJointVelocity()
   if (len == 4)
     ret = typecast(uint8(data), 'uint32');
   else
-    ret = typecast(uint8(data), 'double') * pi/180;
+    ret = typecast(uint8(data), 'double');
     ret = transpose(ret);
   end
 end

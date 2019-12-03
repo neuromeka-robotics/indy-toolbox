@@ -17,7 +17,7 @@ function ret = GetTooltipPosition()
     ret = typecast(uint8(data), 'uint32');
   else
     ret = typecast(uint8(data), 'double');
-    ret(4:6) = ret(4:6) * pi / 180;
+    ret(4:6) = ret(4:6);
     ret = transpose(ret);
   end
 end

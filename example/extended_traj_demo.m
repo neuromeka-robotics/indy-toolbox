@@ -8,8 +8,8 @@ DOF = 6;
 DELT = 250e-6;
 DEGREE = pi/180;
 start.t = 0;
-start.pos = GetJointPosition();
-start.vel = GetJointVelocity(); %zeros(1, DOF, 'double');
+start.pos = GetJointPosition() * DEGREE;
+start.vel = GetJointVelocity() * DEGREE; %zeros(1, DOF, 'double');
 
 % Goal State
 goal.t = 2;
